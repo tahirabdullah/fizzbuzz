@@ -1,1 +1,3 @@
-export default function fizzbuzz(input){}
+export default function fizzbuzz(input){
+    return 0;
+}
