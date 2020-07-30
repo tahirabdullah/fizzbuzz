@@ -5,6 +5,6 @@ describe('fizzbuzz', () => {
         // const example = Example();
         //expect(example.doAThing()).toEqual(true);
         const output = fizzbuzz(0);
-        expect(output).toEqual(0);
+        expect(output).toMatch('0');
     });
 });
