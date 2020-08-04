@@ -11,18 +11,19 @@ describe('fizzbuzz', () => {
         expect(output).toMatch('1');
     });
 
-    it("Should take 3 and return 'Fizz'", () => {
-        const output = fizzbuzz(3);
+    it.each([
+        [3],
+        [6],
+        [9],
+      ])("Should take %i as input and return 'Fizz'", (input) => {
+        const output = fizzbuzz(input);
         expect(output).toMatch('Fizz');
-    });
+      });
 
-    it("Should take 6 and return 'Fizz'", () => {
-        const output = fizzbuzz(6);
-        expect(output).toMatch('Fizz');
-    });
-
-    it("Should take 9 and return 'Fizz'", () => {
-        const output = fizzbuzz(9);
-        expect(output).toMatch('Fizz');
-    });
+    it.each([
+        [5]
+        ])("Shoudl take %i as input and return 'Buzz'", (input) => {
+            const output = fizzbuzz(input);
+            expect(output).toMatch('Buzz');
+        });
 });
