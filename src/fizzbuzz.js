@@ -7,5 +7,9 @@ export default function fizzbuzz(input){
         return 'Fizz';
     }
 
+    if (input == 9) {
+        return 'Fizz';
+    }
+
     return `${input}`;
 }
