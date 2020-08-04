@@ -21,4 +21,8 @@ describe('fizzbuzz', () => {
         expect(output).toMatch('Fizz');
     });
 
+    it("Should take 9 and return 'Fizz'", () => {
+        const output = fizzbuzz(9);
+        expect(output).toMatch('Fizz');
+    });
 });
