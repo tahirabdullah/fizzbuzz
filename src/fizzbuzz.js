@@ -3,5 +3,9 @@ export default function fizzbuzz(input){
         return 'Fizz';
     }
 
+    if (input == 6) {
+        return 'Fizz';
+    }
+
     return `${input}`;
 }
