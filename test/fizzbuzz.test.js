@@ -10,4 +10,9 @@ describe('fizzbuzz', () => {
         const output = fizzbuzz(1);
         expect(output).toMatch('1');
     });
+
+    it("Should take 3 and return 'Fizz'", () => {
+        const output = fizzbuzz(3);
+        expect(output).toMatch('Fizz');
+    })
 });
