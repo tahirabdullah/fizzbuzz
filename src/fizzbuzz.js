@@ -3,5 +3,8 @@ export default function fizzbuzz(input){
         return 'Fizz';
     }
 
+    if (![0,1].includes(input) && input%5 == 0) {
+        return 'Buzz';
+    }
     return `${input}`;
 }
