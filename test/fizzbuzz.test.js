@@ -21,9 +21,19 @@ describe('fizzbuzz', () => {
       });
 
     it.each([
-        [5]
+        [5],
+        [10],
+        [20],
         ])("Shoudl take %i as input and return 'Buzz'", (input) => {
             const output = fizzbuzz(input);
             expect(output).toMatch('Buzz');
+        });
+
+    
+    it.each([
+        [15],
+        ])("Shoudl take %i as input and return 'Fizz Buzz'", (input) => {
+            const output = fizzbuzz(input);
+            expect(output).toMatch('Fizz Buzz');
         });
 });
