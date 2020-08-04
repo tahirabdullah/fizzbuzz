@@ -14,5 +14,11 @@ describe('fizzbuzz', () => {
     it("Should take 3 and return 'Fizz'", () => {
         const output = fizzbuzz(3);
         expect(output).toMatch('Fizz');
-    })
+    });
+
+    it("Should take 6 and return 'Fizz'", () => {
+        const output = fizzbuzz(6);
+        expect(output).toMatch('Fizz');
+    });
+
 });
